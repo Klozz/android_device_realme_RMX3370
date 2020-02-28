@@ -76,6 +76,7 @@ on init
     write /config/usb_gadget/g1/os_desc/qw_sign "MSFT100"
     symlink /config/usb_gadget/g1/configs/b.1 /config/usb_gadget/g1/os_desc/b.1
     setprop sys.usb.configfs 1
+    start init-recovery-qcom-sh
 
 on property:sys.usb.config=none
     write /config/usb_gadget/g1/UDC "none"
@@ -122,3 +123,6 @@ on property:sys.usb.ffs.ready=1 && property:sys.usb.config=adb
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+
+service init-recovery-qcom-sh /init.recovery.qcom.sh
+    disabled

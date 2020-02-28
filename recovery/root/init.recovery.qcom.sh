@@ -1,4 +1,6 @@
 #!/system/bin/sh
+# Make recovery permissive
+setenforce 0
 # Wait for some time to avoid us being overridden
 sleep 5
 # Make symlinks from /dev/block/mapper to /dev/block/bootdevice/by-name

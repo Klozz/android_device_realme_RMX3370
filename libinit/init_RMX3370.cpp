@@ -124,6 +124,7 @@ void vendor_load_properties() {
     string region = android::base::GetProperty("ro.boot.hwc", "");
 
     set_device_props(fp, fp_desc, "Realme", "RMX3370", "Realme GT Neo 2 5G");
+    property_override("ro.product.mod_device", "RMX3370");
 
     load_dalvik_properties();
 

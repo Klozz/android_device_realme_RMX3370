@@ -1,0 +1,8 @@
+# Copyright (C) 2022 The XPerience Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on post-fs
+    mount none /system/lib/libvolumelistener.so /vendor/lib/soundfx/libvolumelistener.so bind
+    mount none /system/lib64/libvolumelistener.so /vendor/lib64/soundfx/libvolumelistener.so bind

@@ -44,6 +44,7 @@ product                                                 /product               e
 vendor                                                  /vendor                ext4    ro,barrier=1,discard                                 wait,avb=vbmeta_vendor,logical,first_stage_mount
 vendor                                                  /vendor                erofs   ro                                                   wait,avb=vbmeta_vendor,logical,first_stage_mount
 /dev/block/by-name/metadata                             /metadata              ext4    noatime,nosuid,nodev,discard                         wait,check,formattable,first_stage_mount
+/dev/block/bootdevice/by-name/boot                      /boot                  emmc    defaults                                             recoveryonly
 #ifdef OPLUS_FEATURE_STORAGE
 #Xuefeng.Peng@ANDROID.STORAGE.0, 2020/06/02, Add for move cache mount before userdata and add check fs_mgr flag
 #/dev/block/bootdevice/by-name/cache                     /cache                 ext4    nosuid,noatime,nodev,barrier=1                       wait

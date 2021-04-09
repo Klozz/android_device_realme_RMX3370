@@ -1,0 +1,17 @@
+//
+// Copyright (C) 2022 The XPerience Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+//
+cc_library_static {
+    name: "libinit_RMX3370",
+    srcs: ["init_RMX3370.cpp"],
+    whole_static_libs: ["libbase"],
+    recovery_available: true,
+    include_dirs: [
+        "system/libbase/include",
+        "system/core/init"
+    ]
+}

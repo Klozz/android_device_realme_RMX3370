@@ -20,5 +20,5 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     xperience_RMX3370-eng \
-	xperience_RMX3370-userdebug \
-	xperience_RMX3370-user
+    xperience_RMX3370-userdebug \
+    xperience_RMX3370-user

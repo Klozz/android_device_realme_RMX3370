@@ -32,4 +32,8 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
 	android.hidl.manager@1.0.vendor
 
+# Init scripts
+PRODUCT_PACKAGES += \
+    init.RMX3370.rc
+
 include vendor/realme/RMX3370/RMX3370-vendor.mk
